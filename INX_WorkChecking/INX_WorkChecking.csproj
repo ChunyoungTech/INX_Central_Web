@@ -354,6 +354,7 @@
     <Content Include="_idb\HisDataQuery.aspx" />
     <Content Include="_app\home.aspx" />
     <Content Include="_idb\IDBHistorianUpload.aspx" />
+    <Content Include="_idb\HistorianLive.aspx" />
     <Content Include="_app\index.aspx" />
     <Content Include="_app\MappEVLatest.aspx" />
     <Content Include="_app\MappEVSetting.aspx" />
@@ -680,6 +681,13 @@
     </Compile>
     <Compile Include="_idb\IDBHistorianUpload.aspx.designer.cs">
       <DependentUpon>IDBHistorianUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_idb\HistorianLive.aspx.cs">
+      <DependentUpon>HistorianLive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_idb\HistorianLive.aspx.designer.cs">
+      <DependentUpon>HistorianLive.aspx</DependentUpon>
     </Compile>
     <Compile Include="_app\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
