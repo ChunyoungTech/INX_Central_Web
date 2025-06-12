@@ -1,0 +1,48 @@
+﻿/*body {
+    background-color:white;
+    font-size:1em;
+}*/
+/*.EditPanel th
+{
+	background-color:#009FA0;
+	color:White;
+	margin:1px;
+	padding:5px;
+}*/
+
+.EditPanel th.tableheader
+{
+	text-align:center;
+	border-bottom:solid White 1px;
+}
+	
+.EditPanel div.buttonArea
+{
+	float:right; padding:5px 5px 0px 0px;
+}
+
+.EditPanel td
+{
+	padding:1px;
+}
+	    
+.EditPanel tr:nth-child(odd) td
+{
+	background-color:#E3EAEB;
+}
+
+.EditPanel .label {
+    text-align:right;width:7em;background-color:#378A99;margin:.1em;padding:.1em;line-height:1em;height:2em;
+}
+
+.EditPanel .must {
+    color:#CCFF56;
+}
+
+.EditPanel .read {
+    color:#E0E0E0;
+}
+
+.EditPanel .write {
+    color:white;
+}

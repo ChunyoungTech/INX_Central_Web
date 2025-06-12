@@ -1,0 +1,23 @@
+﻿body,div,table,span,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin:0px;padding:0px;font-family: "微軟正黑體";
+}
+/*body {
+    font-size:14px;
+}
+@media screen and (min-width: 800px) {
+    body {
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+        font-size:18px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    body {
+        font-size:20px;
+    }
+}*/
+
+

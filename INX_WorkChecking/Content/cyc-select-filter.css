@@ -1,0 +1,50 @@
+﻿div.cyc-select-filter {
+    position: absolute;
+    background-color: #fff;
+    border: .1em solid #808080;
+    z-index: 99999;
+    min-width: 15em;
+    max-width: 80vw;
+    min-height:50vh;
+    max-height:99vh;
+    top:1vh;
+    /*top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    div.cyc-select-filter div {
+        color: #fff;
+        padding: .1em;
+        background-color: #37718E;
+    }
+    div.cyc-select-filter input {
+        width: 98%;
+        margin: .1em;
+    }
+
+    div.cyc-select-filter ul {
+        padding: .3em;
+        max-height: 85vh;
+        overflow: auto;
+    }
+
+    div.cyc-select-filter li {
+        list-style: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+        div.cyc-select-filter li:hover {
+            background-color: #AAA;
+            color: #FFF;
+        }
+
+div.cyc-popup-back {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    background-color: rgba(200,200,200,.3);
+}

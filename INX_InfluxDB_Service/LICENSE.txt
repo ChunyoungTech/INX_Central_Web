@@ -1,0 +1,8 @@
+NuGet:
+
+Dapper 2.1.35: Apache License 2.0
+InfluxDB.Client 4.16.0: MIT License
+Microsoft.Data.SqlClient 5.2.1: MIT License
+Microsoft.Extensions.Hosting 8.0.0: MIT License
+Microsoft.Extensions.Hosting.WindowsServices 8.0.0: MIT License
+Serilog.AspNetCore 8.0.1: Apache License 2.0

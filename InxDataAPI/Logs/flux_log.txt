@@ -1,0 +1,45 @@
+2025-05-22 11:43:40 - Query: 
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A1")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> last()
+2025-05-22 11:43:41 - Query: 
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A10")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> last()
+2025-05-22 11:43:41 - Query: 
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A100")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> last()
+2025-05-22 13:10:34 - Query:
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A1")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> group(columns: ["_field", "tag_name"])
+  |> last()
+2025-05-22 13:10:34 - Query:
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A10")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> group(columns: ["_field", "tag_name"])
+  |> last()
+2025-05-22 13:10:34 - Query:
+
+from(bucket: "FACLINFLUX")
+  |> range(start: time(v: "2025-05-19T07:17:21.0000000Z"), stop: time(v: "2025-05-19T07:17:22.0000000Z"))
+  |> filter(fn: (r) => r["tag_name"] == "A100")
+  |> filter(fn: (r) => r._field == "value" or r._field == "quality")
+  |> group(columns: ["_field", "tag_name"])
+  |> last()

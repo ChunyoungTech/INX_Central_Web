@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/_master/Main.Master" AutoEventWireup="true" CodeBehind="Grid.master.cs" Inherits="WebApp._master.Grid" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../Content/grid.1.1.css" rel="stylesheet" />
+    <link href="../Content/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tiny-draggable.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release"></asp:ScriptManager>
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="500">
+        <ProgressTemplate>
+            <div style="position:fixed;top:0;bottom:0;width:100vw;height:100vh;z-index:9999;display:flex;justify-content:center;align-content:center;align-items:center;background:rgba(135, 139, 144,0.3);">
+                <div style="padding:3em;color:red;background-color:#fff;border:.1em solid red;">
+                    Processing...
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

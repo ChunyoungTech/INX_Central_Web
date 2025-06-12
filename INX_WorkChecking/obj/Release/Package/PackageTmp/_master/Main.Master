@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WebApplication1._master.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>廠務智慧雲端管理平台</title>
+    <link href="../_master/MainMaster.css" rel="stylesheet" />
+    <link href="../Content/reset.1.1.css" rel="stylesheet" />
+    <link href="../Content/layout.1.5.css" rel="stylesheet" />
+    <link href="../Scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.ui.datepicker-zh-TW.js"></script>
+    <script type="text/javascript" src="../Scripts/purl.js"></script>
+    <script type="text/javascript" src="../Scripts/cyc.ext-1.6.js"></script>
+    <script type="text/javascript" src="../_master/MainMaster.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="OpenLogin" style="width:100vw;height:100vh;z-index:9999;display:none;position:fixed;top:0;left:0;">
+        <iframe id="ifmLogin" style="width:100vw;height:100vh;border:none;"></iframe>
+    </div>
+    <div class="masterHeader" style="background-image:url('../_img/Banner-1.jpg');background-repeat:space;">
+        <div class="masterMenuShow" style="display: none;"><img src="../_img/menu_white.png" alt="顯示選單" title="顯示選單" /></div>
+        <div class="masterMenuHide"><img src="../_img/menu_white.png" alt="隱藏選單" title="隱藏選單" /></div>
+        <div class="masterLogo">
+            <img src="../_img/Banner-2.png" style="height: 3rem; padding: .2rem .2rem 0 .2rem; float: left;z-index:1;border-style:none;" />
+            <%--<a href="../index.aspx"><img alt="LOGO" src="../_img/logo_innolux.jpg" style="height: 1.5em; padding: .2em .2em 0 .2em; float: left;z-index:1;border-style:none;" /></a>--%>
+        </div>
+
+        <div class="masterLogo" style="padding-top:.3em;">
+            <p style="padding-left:.3em;font-size:1em;text-shadow: #AAA .05em .05em .05em"><b>廠務智慧雲端管理平台</b></p>
+        </div>
+
+        <div class="masterQnA">
+            <a href="#" onclick="ChangePWD()">修改<br />密碼</a>
+        </div>
+        <div class="masterQnA">
+            <a href="../logout.aspx" style="line-height:2em;">登出</a>
+        </div>
+
+        <div class="masterUser" style="padding-top:.3em;padding-right:1em;">
+            <asp:Literal ID="ltlUser" runat="server"></asp:Literal>
+        </div>
+    </div>
+
+    <div class="masterMenu">
+        <asp:Literal ID="ltlMenu" runat="server"></asp:Literal>
+    </div>
+    <div style="width: 100%; margin: 3.2rem auto 0 auto;">
+        <div class="masterPage">
+            <div class="masterMain">
+                <form id="form1" runat="server">
+                    <div class="masterCont">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(DatePicker);
+    </script>
+</body>
+</html>

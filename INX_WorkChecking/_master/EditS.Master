@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EditS.master.cs" Inherits="WebApp._master.EditS" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link href="../Content/reset_edit.css" rel="stylesheet" />
+    <link href="../Content/layout.1.5.css" rel="stylesheet" />
+    <link href="../Content/pinTabs.css" rel="stylesheet" />
+    <link href="../Content/edit.css" rel="stylesheet" />
+    <link href="../Content/jqtree.css" rel="stylesheet" />
+    <link href="../Content/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="../Scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Content/grid.1.1.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.ui.datepicker-zh-TW.js"></script>
+    <script type="text/javascript" src="../Scripts/purl.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tiny-draggable.min.js"></script>
+    <script type="text/javascript" src="../Scripts/tree.jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/cyc.ext-1.6.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            CreateTab();
+            $("body").css({ "font-size": parent.$("body").css("font-size") });
+        });
+        function CreateTab() {
+            $("#tabs").easytabs({ animate: false });
+        }
+        function OpenLogin() {
+            $("#OpenLogin").show().children("#ifmLogin").attr("src", "../loginInPage.aspx");
+        }
+        function CloseLogin() {
+            $("#OpenLogin").hide().children("#ifmLogin").attr("src", "");
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="OpenLogin" style="width:100vw;height:100vh;z-index:9999;display:none;position:fixed;">
+        <iframe id="ifmLogin" style="width:100vw;height:100vh;border:none;"></iframe>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(CreateTab);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(DatePicker);
+    </script>
+</body>
+</html>

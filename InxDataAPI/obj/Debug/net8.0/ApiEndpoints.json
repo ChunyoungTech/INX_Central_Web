@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "InxDataAPIController",
+    "Method": "Echo",
+    "RelativePath": "InxDataAPI/Echo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "InxDataAPI.Models.DataRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InxDataAPIController",
+    "Method": "FAC8Data",
+    "RelativePath": "InxDataAPI/FAC8Data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "InxDataAPI.Models.DataRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InxDataAPIController",
+    "Method": "GetRandomValue",
+    "RelativePath": "InxDataAPI/GetRandomValue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InxDataAPIController",
+    "Method": "GetHello",
+    "RelativePath": "InxDataAPI/Hello",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

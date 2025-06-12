@@ -1,0 +1,14 @@
+﻿using Microsoft.Owin;
+using Owin;
+
+[assembly: OwinStartup(typeof(WebApp.Startup))]
+namespace WebApp
+{
+    public class Startup
+    {
+        public void Configuration(IAppBuilder app)
+        {
+            app.MapSignalR(); // (暫不用)
+        }
+    }
+}

@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Vendor.master.cs" Inherits="WebApp._master.Vendor" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>中央施工管理系統</title>
+    <link href="../Content/reset.1.1.css" rel="stylesheet" />
+    <link href="../Content/layout.1.5.css" rel="stylesheet" />
+    <link href="../Content/grid.1.1.css" rel="stylesheet" />
+    <link href="../Content/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="../Scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.ui.datepicker-zh-TW.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tiny-draggable.min.js"></script>
+    <script type="text/javascript" src="../Scripts/purl.js"></script>
+    <script type="text/javascript" src="../Scripts/cyc.ext-1.6.js"></script>
+    <script type="text/javascript">
+        //$(function () {
+        //    var app = $.url().param("app");
+        //    $.get("../_query/GetUserMenu.ashx" + (app != undefined ? "?app=" + app : ""), function (data) {
+        //        if (data != null) {
+        //            //$("#UserName").text("使用者：" + data.UserName);
+        //            //$("#UserDept").text("單位：" + data.UserDept);
+        //            var cont = "";
+        //            for (var m in data.List) {
+        //                cont += "<h1>" + data.List[m].Name + "</h1><ul>";
+        //                for (var i in data.List[m].Items) {
+        //                    cont += "<li data-v='" + data.List[m].Items[i].ID + "'><a href='../" + data.List[m].Items[i].Dir + "/?app=" + data.List[m].Items[i].ID + "'>" + data.List[m].Items[i].Name + "</a></li>";
+        //                }
+        //                cont += "</ul>";
+        //            }
+        //            $(".masterMenu").append(cont);
+        //            if (app != undefined) {
+        //                app = $(".masterMenu ul li[data-v='" + app + "']");
+        //                if (app.length > 0) {
+        //                    app.addClass("hav").parent().show().siblings("ul").hide();
+        //                }
+        //                if (data.isOnlineHelp) {
+        //                    $(".online_help").show();
+        //                    $(".masterHelp").html(data.OnlineHelp);
+        //                }
+        //            } else {
+        //                $(".masterMenu ul").hide();
+        //            }
+        //        }
+        //    }, "json");
+
+        //    $(document).on("click", ".masterMenu h1", function () { $(this).next().slideToggle(); });
+        //    $(document).on("click", "a.online_help", function (e) { $(".masterHelp").slideToggle(500); e.preventDefault(); });
+        //    $(".masterMenuShow").click(function () { $(".masterCont").animate({ marginLeft: "11.2em" }, 100); switchMenu(); });
+        //    $(".masterMenuHide").click(function () { $(".masterCont").animate({ marginLeft: ".2em" }, 100); switchMenu(); });
+        //});
+        //function switchMenu() {
+        //    $(".masterMenuShow,.masterMenuHide").toggle();
+        //    $(".masterMenu").fadeToggle(100);//.slideToggle(100);
+        //}
+        $.datepicker.setDefaults({
+            changeYear: true,
+            changeMonth: true
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="masterHeader">
+<%--        <div class="masterMenuShow" style="display: none;"><img src="../_img/menu_white.png" alt="顯示選單" title="顯示選單" /></div>
+        <div class="masterMenuHide"><img src="../_img/menu_white.png" alt="隱藏選單" title="隱藏選單" /></div>--%>
+        <div class="masterLogo">
+            <img alt="LOGO" src="../_img/logo.jpg" style="height: 2.2em; padding: 0 .2em 0 .2em; float: left;z-index:1;border-style:none;" />
+        </div>
+
+        <div class="masterLogo" style="padding-top:.2em;">
+            <p style="padding-left:1em;font-size:1.2em;"><b>中央施工管理系統</b></p>
+        </div>
+
+<%--        <div class="masterQnA">
+            <a href="#" onclick="ChangePWD()">修改<br />密碼</a>
+        </div>
+        <div class="masterQnA">
+            <a href="../logout.aspx" style="line-height:2em;">登出</a>
+        </div>--%>
+
+        <div class="masterUser" style="padding-top:1em;padding-right:1em;">
+            <asp:Literal ID="ltlUser" runat="server" Visible="false"></asp:Literal>
+            <p id="UserName"></p>
+            <p id="UserDept"></p>
+        </div>
+    </div>
+
+<%--    <div class="masterMenu">
+    </div>--%>
+    <div style="width: 100%; margin: 3.2em auto 0 auto;">
+        <div class="masterPage">
+            <div class="masterMain">
+                <form id="form1" runat="server">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release"></asp:ScriptManager>
+                    <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="600">
+                        <ProgressTemplate>
+                            <div style="position:fixed;bottom:3em;right:2em;font-size:1.5em;color:red;">
+                                Processing...
+                            </div>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    <div class="masterCont" style="margin-left:.2em;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

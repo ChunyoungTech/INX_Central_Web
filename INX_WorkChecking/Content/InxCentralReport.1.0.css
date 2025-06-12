@@ -1,0 +1,55 @@
+﻿.txt-input-number {
+    width: 98%;
+    min-width: 5em;
+    max-width: 7em;
+    text-align: right;
+    padding-right: .1em;
+    border-color: #1fcce7;
+    /*background-color: transparent;*/
+}
+    .txt-input-number:focus {
+        background-color: #b3fdfd;
+    }
+
+    .report-level01{
+        color:blue;
+        padding:.1rem .3rem;
+        margin: .1rem 0;
+        border: .1rem solid blue;
+        display:inline;
+    }
+
+.txt-input-string {
+    width: 99%;
+    min-width:20em;
+}
+
+.txt-input-readonly {
+    width: 98%;
+    min-width: 5em;
+    max-width: 7em;
+    text-align: right;
+    border-color: transparent;
+    background-color: transparent;
+    outline: none;
+}
+
+.value-changed {
+    background-color: #f3f468;
+}
+.value-invalid {
+    background-color: #ea3434;
+}
+.fix-table {
+    width: 100%;
+    max-height: 85vh;
+    overflow:auto;
+}
+.fix-table2 {
+    width: 100%;
+    max-height: 90vh;
+    overflow:auto;
+}
+.div-category-type {
+    color: red; font-weight: 600;padding-top:.3em;
+}

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cyc", "cyc\cyc.csproj", "{D92D2B00-148E-4755-8A49-8FEE39E99BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cycBase", "cycBase\cycBase.csproj", "{F7F7E3CA-2899-4828-8E44-A9FB9DCBD0FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "方案項目", "方案項目", "{00CC01E2-690A-4AAD-A8EC-9778BD3FBFEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INX_WorkChecking", "INX_WorkChecking\INX_WorkChecking.csproj", "{79DA4161-DDD7-45F3-B834-F93146EF13FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InxDataAPI", "InxDataAPI\InxDataAPI.csproj", "{FE0DFF6A-0CBA-40FF-B1F2-1EDE5903A683}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "INX_InfluxDB_Service", "INX_InfluxDB_Service\INX_InfluxDB_Service.csproj", "{DC621F46-56CA-451D-ADC4-64896DA77829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92D2B00-148E-4755-8A49-8FEE39E99BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92D2B00-148E-4755-8A49-8FEE39E99BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92D2B00-148E-4755-8A49-8FEE39E99BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92D2B00-148E-4755-8A49-8FEE39E99BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F7E3CA-2899-4828-8E44-A9FB9DCBD0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F7E3CA-2899-4828-8E44-A9FB9DCBD0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F7E3CA-2899-4828-8E44-A9FB9DCBD0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F7E3CA-2899-4828-8E44-A9FB9DCBD0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DA4161-DDD7-45F3-B834-F93146EF13FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DA4161-DDD7-45F3-B834-F93146EF13FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DA4161-DDD7-45F3-B834-F93146EF13FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DA4161-DDD7-45F3-B834-F93146EF13FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0DFF6A-0CBA-40FF-B1F2-1EDE5903A683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0DFF6A-0CBA-40FF-B1F2-1EDE5903A683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0DFF6A-0CBA-40FF-B1F2-1EDE5903A683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0DFF6A-0CBA-40FF-B1F2-1EDE5903A683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC621F46-56CA-451D-ADC4-64896DA77829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC621F46-56CA-451D-ADC4-64896DA77829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC621F46-56CA-451D-ADC4-64896DA77829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC621F46-56CA-451D-ADC4-64896DA77829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74794DE5-59B0-475C-9BAB-9DD20C2814CE}
+	EndGlobalSection
+EndGlobal

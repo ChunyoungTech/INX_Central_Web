@@ -1,0 +1,72 @@
+2024/11/28 下午 06:16:30 寫入錯誤時發生錯誤，改寫入文字檔。
+建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: Named Pipes Provider, error: 40 - 無法開啟至 SQL Server 的連接)
+   於 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   於 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   於 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   於 System.Data.SqlClient.SqlConnection.Open()
+   於 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   於 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   於 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   於 cyc.Log.DoWriteError(String error) 於 D:\Project_CY\CYWorkingSystem_Online\cycBase\cyc.Global.cs: 行 96
+原始錯誤
+Msg: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: Named Pipes Provider, error: 40 - 無法開啟至 SQL Server 的連接)，Cmd: 
+with VMT as (
+	select A.fac_code as Fac,A.con_number as ConNumber,A.main_area as Area,A.vendor_name as Vendor,A.con_conten as ConContent
+	,replace(SUBSTRING(A.engineer,0,5),'(','') as UserName,A.vendor_pe as VendorMain,A.END_TIME
+	from View_VMT_FAC A where con_date=@Date and (fac_code='FAC8' or fac_code='FAC6')
+),CHKALL as (
+	select A.ConNumber,C.CHECK_TYPE as CheckType,D.FRUserID,D.FRUserName,D.LogDateTime
+	from VMT A
+	inner join WORK_CHECKIN B on A.ConNumber=B.con_number
+	inner join WORK_CHECKIN_LOG C on B.SEQ_ID=C.WORK_CHECKIN_ID
+	inner join RecognitionAuth D on C.IFP_RecognitionAuth_ID=D.ID
+)
+
+select C.ConNumber,C.Fac,C.Vendor,C.Area,C.ConContent,C.UserName,C.VendorMain,A.FRUserName,A.LogDateTime as CheckInTime,B.LogDateTime as CheckOutTime,E.Name as DeptName,F.MappName,C.END_TIME
+from CHKALL A left join CHKALL B on B.CheckType='CHECKOUT' and A.ConNumber=B.ConNumber and A.FRUserID=B.FRUserID
+inner join VMT C on A.ConNumber=C.ConNumber
+inner join SysUser D on C.UserName=D.Name
+inner join SysDept E on D.DeptID=E.ID
+inner join WorkCheckMappSetting F on E.ID=F.DeptID
+where A.CheckType='CHECKIN' and F.IsEnabled=1
+order by A.ConNumber,A.LogDateTime,B.LogDateTime， Obj: {"Date":"2024-11-28T00:00:00"}
+
+2024/11/29 上午 09:16:08 寫入錯誤時發生錯誤，改寫入文字檔。
+建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: Named Pipes Provider, error: 40 - 無法開啟至 SQL Server 的連接)
+   於 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   於 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   於 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   於 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   於 System.Data.SqlClient.SqlConnection.Open()
+   於 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   於 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   於 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   於 cyc.Log.DoWriteError(String error) 於 D:\Project_CY\CYWorkingSystem_Online\cycBase\cyc.Global.cs: 行 96
+原始錯誤
+Msg: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: Named Pipes Provider, error: 40 - 無法開啟至 SQL Server 的連接)，Cmd: 
+with VMT as (
+	select A.fac_code as Fac,A.con_number as ConNumber,A.main_area as Area,A.vendor_name as Vendor,A.con_conten as ConContent
+	,replace(SUBSTRING(A.engineer,0,5),'(','') as UserName,A.vendor_pe as VendorMain,A.END_TIME
+	from View_VMT_FAC A where con_date=@Date and (fac_code='FAC8' or fac_code='FAC6')
+),CHKALL as (
+	select A.ConNumber,C.CHECK_TYPE as CheckType,D.FRUserID,D.FRUserName,D.LogDateTime
+	from VMT A
+	inner join WORK_CHECKIN B on A.ConNumber=B.con_number
+	inner join WORK_CHECKIN_LOG C on B.SEQ_ID=C.WORK_CHECKIN_ID
+	inner join RecognitionAuth D on C.IFP_RecognitionAuth_ID=D.ID
+)
+
+select C.ConNumber,C.Fac,C.Vendor,C.Area,C.ConContent,C.UserName,C.VendorMain,A.FRUserName,A.LogDateTime as CheckInTime,B.LogDateTime as CheckOutTime,E.Name as DeptName,F.MappName,C.END_TIME
+from CHKALL A left join CHKALL B on B.CheckType='CHECKOUT' and A.ConNumber=B.ConNumber and A.FRUserID=B.FRUserID
+inner join VMT C on A.ConNumber=C.ConNumber
+inner join SysUser D on C.UserName=D.Name
+inner join SysDept E on D.DeptID=E.ID
+inner join WorkCheckMappSetting F on E.ID=F.DeptID
+where A.CheckType='CHECKIN' and F.IsEnabled=1
+order by A.ConNumber,A.LogDateTime,B.LogDateTime， Obj: {"Date":"2024-11-29T00:00:00"}
+

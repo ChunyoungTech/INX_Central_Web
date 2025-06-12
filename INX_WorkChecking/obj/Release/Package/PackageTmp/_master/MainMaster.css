@@ -1,0 +1,28 @@
+﻿.masterLogout {
+    background-color: orange;
+    color: white;
+    padding: .1rem .2rem;
+    font-size: .8rem;
+    display: inline;
+    float: right;
+    margin-top: .9rem;
+    margin-right: .2rem;
+    border-radius: .5rem;
+    width: 4rem;
+    text-align: center;
+    border: 1px solid orange;
+}
+
+    .masterLogout a {
+        text-decoration: none;
+        color: white;
+        width: 99%;
+    }
+
+    .masterLogout:hover {
+        background-color: white;
+    }
+
+        .masterLogout:hover a {
+            color: orange;
+        }

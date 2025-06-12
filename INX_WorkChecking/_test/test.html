@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="cyc-select-filter.css" rel="stylesheet" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="cyc-select-filter.js"></script>
+</head>
+<body>
+    <select name="ctl00$TabContent$ddlDisableRemind" id="TabContent_ddlDisableRemind" title="逾期未解隔離通知設定" class="cyc-selectfilter" style="width:98%;">
+        <option value="0"></option>
+        <option selected="selected" value="1">TEST1(開發測試)</option>
+        <option value="4">FAC1_WATER_LLDL_FABLLD(FAC1_水務_LLD_FAB漏液警報推播網)</option>
+        <option value="5">FAC1_WATER_WWTS_RELEASE_F(放流水_氟離子濃度異常)</option>
+        <option value="6">FAC1_WATER_WWTS_RELEASE_SS(放流水_懸浮微粒SS異常)</option>
+        <option value="7">FAC1_WATER_WWTS_RELEASE_PH(放流水_PH值異常)</option>
+        <option value="8">FAC1_WATER_UPWS_UP_PH(FAC1_軟水出水導電度異常)</option>
+        <option value="9">FAC1_WATER_UPWS_RO_PH(FAC1_RO出水導電度異常)</option>
+        <option value="10">FAC1_WATER_DIWT_RAW_LT(FAC1_水務_原水液位異常)</option>
+        <option value="11">FAC1_ELEC_GISS_PD(一廠局部放電推播群組)</option>
+        <option value="12">FAC1_GMS_GMSS_GE1(FAC1_地震通訊)</option>
+        <option value="13">FAC1_ELEC_PMSS_POWER_PM(FAC1_壓降通訊)</option>
+        <option value="14">FAC1_ELEC_ELEV_PES(FAC1_電梯_警報)</option>
+        <option value="19">FAC2_WATER_LLDL_FABLLD(FAB2_水務_LLD_FAB漏液警報推播網)</option>
+        <option value="20">FAC2_GAS_CDSS__AutoCall(FAB2廠區_自動叫料推播)</option>
+        <option value="21">FAC2_WATER_WWTS_RELEASE(FAB2_水務_放流水異常應變團隊)</option>
+        <option value="22">FAC2_ELEC_GISS_PD(二廠局部放電)</option>
+        <option value="23">FAC2_ELEC_PWTS_OILTemp(主變壓器溫度警報)</option>
+        <option value="24">FAC2_GMS_GMSS_GE1(FAC2_地震通訊)</option>
+        <option value="25">FAC2_ELEC_PMSS_POWER_PM(FAC2_壓降通訊)</option>
+        <option value="26">FAC2_ELEC_ELEV_PES(電梯警報)</option>
+        <option value="27">FAC2_HVAC_EXHC_CVD_F(FAC2_空調_CVD氟離子預警)</option>
+        <option value="1004">FAC4_ELEC_CCTV_Freezer_Sm(TT04冷凍庫區智能安防通報)</option>
+        <option value="1005">FAC6_WIC_ARRAY(FAC6_ARRAY_WIC純水監控平台推播)</option>
+        <option value="1006">FAC6_WIC_CF(FAC6_CF_WIC純水監控平台推播)</option>
+        <option value="1007">FAC6_WIC_LCD(FAC6_LCD_WIC純水監控平台推播)</option>
+        <option value="1008">FACT6_WIC_ARRAY(FACT6_ARRAY_WIC純水監控平台推播)</option>
+        <option value="1009">FACT6_WIC_CF(FACT6_CF_WIC純水監控平台推播)</option>
+        <option value="1010">FACT6_WIC_LCD(FACT6_LCD_WIC純水監控平台推播)</option>
+        <option value="2004">FAC8_A_WIC_ARRAY(FAC8A_ARRAY_WIC純水監控平台推播)</option>
+        <option value="2005">FAC8_A_WIC_CF(FAC8A_CF_WIC純水監控平台推播)</option>
+        <option value="2006">FAC8_B_WIC_ARRAY(FAC8B_ARRAY_WIC純水監控平台推播)</option>
+        <option value="2007">FAC8_B_WIC_CF(FAC8B_CF_WIC純水監控平台推播)</option>
+        <option value="2008">FAC8_A_WIC_LCD(FAC8A_LCD_WIC純水監控平台推播)</option>
+        <option value="2009">FAC4_TAC_WIC_ARRAY(FAC4_ARRAY_WIC純水監控平台推播)</option>
+        <option value="2010">FAC4_TAC_WIC_CF(FAC4_CF_WIC純水監控平台推播)</option>
+        <option value="2011">FAC4_TAC_WIC_LCD(FAC4_LCD_WIC純水監控平台推播)</option>
+        <option value="2012">FAC7_WIC_ARRAY(FAC7_ARRAY_WIC純水監控平台推播)</option>
+        <option value="2013">FAC7_WIC_CF(FAC7_CF_WIC純水監控平台推播)</option>
+        <option value="2014">FAC7_WIC_LCD(FAC7_LCD_WIC純水監控平台推播)</option>
+        <option value="2015">FAC5_WIC_ARRAY(FAC5_ARRAY_WIC純水監控平台推播)</option>
+        <option value="2016">FAC5_WIC_CF(FAC5_CF_WIC純水監控平台推播)</option>
+        <option value="2017">FAC5_WIC_LCD(FAC5_LCD_WIC純水監控平台推播)</option>
+        <option value="2018">FAC7_CDA(FAC7_CDA製程用量平台推播)</option>
+        <option value="3004">FAC3_WIC_ARRAY(FAC3_ARRAY_WIC純水監控平台推播)</option>
+        <option value="3005">FAC3_WIC_CF(FAC3_CF_WIC純水監控平台推播)</option>
+        <option value="3006">FAC3_WIC_LCD(FAC3_LCD_WIC純水監控平台推播)</option>
+        <option value="3007">TN_HightGroup_Earthquake(南廠區地震彙整≧2級推播系統)</option>
+        <option value="3008">TN_HightGroup_Pressdrop(南廠區壓降剩餘≦85%)</option>
+        <option value="3009">JN_HightGroup_Earthquake(北廠區地震彙整≧2級推播系統)</option>
+        <option value="3010">JN_HightGroup_Pressdrop(北廠區壓降剩餘≦85%)</option>
+        <option value="4007">FAC8_A_CDA(FAC8_A_CDA製程用量平台推播)</option>
+        <option value="4008">FAC8_B_CDA(FAC8_B_CDA製程用量平台推播)</option>
+        <option value="4009">FAC1_ELEC_PMSS_P(FAC1_單廠壓降推播)</option>
+        <option value="4010">FAC2_ELEC_PMSS_P(FAC2_單廠壓降推播)</option>
+        <option value="4011">FAC3_ELEC_PMSS_P(FAC3_單廠壓降推播)</option>
+        <option value="4012">FAC4_ELEC_PMSS_P(FAC4_單廠壓降推播)</option>
+        <option value="4013">FAC5_ELEC_PMSS_P(FAC5_單廠壓降推播)</option>
+        <option value="4014">FAC6_ELEC_PMSS_P(FAC6_單廠壓降推播)</option>
+        <option value="4015">FAC7_ELEC_PMSS_P(FAC7_單廠壓降推播)</option>
+        <option value="4016">FAC8_ELEC_PMSS_P(FAC8_單廠壓降推播)</option>
+        <option value="4017">FACL_ELEC_PMSS_P(FACL_單廠壓降推播)</option>
+        <option value="4018">FAC1_GMS_GMSS_E(FAC1_單廠地震推播)</option>
+        <option value="4019">FACT1_ELEC_PMSS_P(FACT1_單廠壓降推播)</option>
+        <option value="4020">FACT2_ELEC_PMSS_P(FACT2_單廠壓降推播)</option>
+        <option value="4021">FACT3_ELEC_PMSS_P(FACT3_單廠壓降推播)</option>
+        <option value="4022">TN_TestGroup_Earthquake(南廠區地震彙整≧2級推播系統_測試)</option>
+        <option value="4023">TN_TestGroup_Pressdrop(南廠區壓降剩餘≦85%_測試)</option>
+        <option value="4024">JN_TestGroup_Earthquake(北廠區地震彙整≧2級推播系統_測試)</option>
+        <option value="4025">JN_TestGroup_Pressdrop(北廠區壓降剩餘≦85%_測試)</option>
+        <option value="4026">FAC2_GMS_GMSS_E(FAC2_單廠地震推播)</option>
+        <option value="4027">FAC3_GMS_GMSS_E(FAC3_單廠地震推播)</option>
+        <option value="4028">FAC4_GMS_GMSS_E(FAC4_單廠地震推播)</option>
+        <option value="4029">FAC5_GMS_GMSS_E(FAC5_單廠地震推播)</option>
+        <option value="4030">FAC6_GMS_GMSS_E(FAC6_單廠地震推播)</option>
+        <option value="4031">FAC7_GMS_GMSS_E(FAC7_單廠地震推播)</option>
+        <option value="4032">FACL_GMS_GMSS_E(FACL_單廠地震推播)</option>
+        <option value="4033">FACT1_GMS_GMSS_E(FACT1_單廠地震推播)</option>
+        <option value="4034">FACT2_GMS_GMSS_E(FACT2_單廠地震推播)</option>
+        <option value="4035">FACT3_GMS_GMSS_E(FACT3_單廠地震推播)</option>
+        <option value="4036">FAC8_GMS_GMSS_E(FAC8_單廠地震推播)</option>
+        <option value="5033">FACT6_CDA(FACT6_CDA製程用量平台推播)</option>
+        <option value="5034">FAC1_CDA(FAC1_CDA製程用量平台推播)</option>
+        <option value="5035">FAC3_CDA(FAC3_CDA製程用量平台推播)</option>
+        <option value="5036">FAC6_CDA(FAC6_CDA製程用量平台推播)</option>
+        <option value="6035">FAC4_CheckEventList(FAC4_頂樓門禁推撥)</option>
+        <option value="6036">FAC3_CheckEventList(FAC3_頂樓門禁推撥)</option>
+        <option value="6037">FAC5_CheckEventList(FAC5_頂樓門禁推撥)</option>
+        <option value="6038">FAC5_CDA(FAC5_CDA製程用量平台推播)</option>
+        <option value="6039">FACL_WATER_C3_WasteWater(C廠區C3廢水上拋訊息)</option>
+        <option value="6040">FACL_WATER_Boron_WasteWat(C廠區硼廢水CP上拋訊息)</option>
+        <option value="6041">FACL_WATER_LLDL_FABLLD(C廠區漏液系統訊息推播)</option>
+        <option value="6042">FACL_GAS_HF_ChemDosage(C廠區製程機台化學品用量警報)</option>
+        <option value="6043">FACL_GAS_C3H_ChemDosage(C廠區製程機台化學品用量警報)</option>
+        <option value="6044">FACL_GAS_FCG_ALARM(FCG氣化課異常通報)</option>
+        <option value="6045">FACL_GAS_FCP_Inform(FCP製程通報)</option>
+        <option value="6046">FACL_ELE_POWERDOWN_Escape(C廠區壓降設備跳脫通報)</option>
+        <option value="6047">FACL_WATER_PCW_Inform(C廠區PCW通報)</option>
+        <option value="6048">FACL_GMS_GMSS_GE1(FACL_地震通訊)</option>
+        <option value="6049">FACL_ELEC_PMSS_POWER_PM(FACL_壓降通訊)</option>
+        <option value="6050">FACL_ELEC_ELEV_PES(C廠區電力課電梯異常推播通報)</option>
+        <option value="6051">FACL_GAS_FCC_Inform(LCM氣化課訊息推播)</option>
+        <option value="6052">FACL_HVAC_MAU_TEMP(Ｃ廠區無塵室溫溼度)</option>
+        <option value="6053">FAC7_CheckEventList(FAC7_頂樓門禁推撥)</option>
+        <option value="6055">FAC2_CDA(FAC2_CDA製程用量平台推播)</option>
+        <option value="6056">FAC7_GCIC_lost(GCIC資料未上傳推撥)</option>
+        <option value="6057">FAC4_TAC_CDA(FAC4_TAC_CDA製程用量平台推播)</option>
+        <option value="6058">FAC1_CheckEventList(FAC1_頂樓門禁推撥)</option>
+        <option value="6059">FAC2_CheckEventList(FAC2_頂樓門禁推撥)</option>
+        <option value="6060">FAC7_CDA_ARRAY(Array7_CDA製程用量平台推播)</option>
+        <option value="6061">FAC7_CDA_CF(CF7_CDA製程用量平台推播)</option>
+        <option value="6062">FAC7_CDA_LCD(LCD7_CDA製程用量平台推播)</option>
+        <option value="6063">FAC3_CheckAccessList(FAC3門禁上拋狀態)</option>
+        <option value="6064">FAC6_CheckEventList(FAC6_頂樓門禁推撥)</option>
+        <option value="7063">FAC4_TOC_CheckEventList(FAC4_TOC_頂樓門禁推撥)</option>
+        <option value="7064">FACL_CheckEventList(FACL_頂樓門禁推撥)</option>
+        <option value="7065">FAC6_ELEC_OTHER_CARESYSTEH(FAC_人員關懷平台逾時推撥)</option>
+        <option value="7066">FAC7_WATER(七廠水務課施工訊息MAPP通報)</option>
+        <option value="7067">FAC7_HVAC(七廠空調課施工訊息MAPP通報)</option>
+        <option value="7068">FAC7_GAS(七廠氣化課施工訊息MAPP通報)</option>
+        <option value="7069">FAC7_POWER(七廠電力課施工訊息MAPP通報)</option>
+
+    </select>
+</body>
+</html>

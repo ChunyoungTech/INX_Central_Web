@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KevinHuang\\Git\\InxDataAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\models\\idbdataapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:models\\idbdataapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\inxdataapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:inxdataapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\services\\dataapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:services\\dataapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\models\\dataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:models\\dataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\models\\datarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:models\\datarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|d:\\kevinhuang\\git\\inxdataapi\\controllers\\fac8datacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F20020-B7AE-4DD6-B438-781F3BEACF3C}|InxDataAPI.csproj|solutionrelative:controllers\\fac8datacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InxDataAPI",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\InxDataAPI.csproj",
+              "RelativeDocumentMoniker": "InxDataAPI.csproj",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\InxDataAPI.csproj",
+              "RelativeToolTip": "InxDataAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T09:42:39.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-14T08:32:12.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataApiService.cs",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\Services\\DataApiService.cs",
+              "RelativeDocumentMoniker": "Services\\DataApiService.cs",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\Services\\DataApiService.cs",
+              "RelativeToolTip": "Services\\DataApiService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:46:08.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IDBDataAPIModel.cs",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\IDBDataAPIModel.cs",
+              "RelativeDocumentMoniker": "Models\\IDBDataAPIModel.cs",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\IDBDataAPIModel.cs",
+              "RelativeToolTip": "Models\\IDBDataAPIModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:46:04.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataResponse.cs",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\DataResponse.cs",
+              "RelativeDocumentMoniker": "Models\\DataResponse.cs",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\DataResponse.cs",
+              "RelativeToolTip": "Models\\DataResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:46:03.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataRequest.cs",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\DataRequest.cs",
+              "RelativeDocumentMoniker": "Models\\DataRequest.cs",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\Models\\DataRequest.cs",
+              "RelativeToolTip": "Models\\DataRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:46:02.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FAC8DataController .cs",
+              "DocumentMoniker": "D:\\KevinHuang\\Git\\InxDataAPI\\Controllers\\FAC8DataController .cs",
+              "RelativeDocumentMoniker": "Controllers\\FAC8DataController .cs",
+              "ToolTip": "D:\\KevinHuang\\Git\\InxDataAPI\\Controllers\\FAC8DataController .cs",
+              "RelativeToolTip": "Controllers\\FAC8DataController .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:45:39.321Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
