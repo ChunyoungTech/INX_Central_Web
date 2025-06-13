@@ -27,7 +27,7 @@ namespace WebApp._idb
         {
             if (string.IsNullOrEmpty(ddlFactory.SelectedValue)) return null;
             string table = ddlFactory.SelectedValue.Replace("FAB", "FAC") + "_Historian_Live";
-            bPara.Command = $@"select [DateTime],[TagName],[Value],[Quality] from FAC_Loader.dbo.[{table}] where 1=1
+            bPara.Command = $@"select [DateTime],[TagName],[Value],[vValue],[Quality],[QualityDetail],[OPCQuality],[wwTagKey],[wwRetrievalMode],[wwTimeDeadband],[wwValueDeadband],[wwTimeZone],[wwParameters],[SourceTag],[SourceServer],[wwValueSelector],[wwExpression],[wwUnit] from FAC_Loader.dbo.[{table}] where 1=1
 {(string.IsNullOrWhiteSpace(txtTagName.Text) ? string.Empty : " and TagName like @Tag")}
 {(string.IsNullOrWhiteSpace(txtQuality.Text) ? string.Empty : " and Quality=@Quality")}";
             var param = new { Tag = $"%{txtTagName.Text.Trim()}%", Quality = txtQuality.Text };
