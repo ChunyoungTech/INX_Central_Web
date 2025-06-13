@@ -23,7 +23,21 @@
                         <asp:BoundField DataField="DateTime" HeaderText="資料時間" DataFormatString="{0:yyyy-MM-dd HH:mm:ss}" ItemStyle-HorizontalAlign="Center" />
                         <asp:BoundField DataField="TagName" HeaderText="TagName" />
                         <asp:BoundField DataField="Value" HeaderText="Value" ItemStyle-HorizontalAlign="Right" />
+                        <asp:BoundField DataField="vValue" HeaderText="vValue" />
                         <asp:BoundField DataField="Quality" HeaderText="Quality" ItemStyle-HorizontalAlign="Center" />
+                        <asp:BoundField DataField="QualityDetail" HeaderText="QualityDetail" ItemStyle-HorizontalAlign="Center" />
+                        <asp:BoundField DataField="OPCQuality" HeaderText="OPCQuality" ItemStyle-HorizontalAlign="Center" />
+                        <asp:BoundField DataField="wwTagKey" HeaderText="wwTagKey" ItemStyle-HorizontalAlign="Center" />
+                        <asp:BoundField DataField="wwRetrievalMode" HeaderText="wwRetrievalMode" />
+                        <asp:BoundField DataField="wwTimeDeadband" HeaderText="wwTimeDeadband" ItemStyle-HorizontalAlign="Center" />
+                        <asp:BoundField DataField="wwValueDeadband" HeaderText="wwValueDeadband" ItemStyle-HorizontalAlign="Right" />
+                        <asp:BoundField DataField="wwTimeZone" HeaderText="wwTimeZone" />
+                        <asp:BoundField DataField="wwParameters" HeaderText="wwParameters" />
+                        <asp:BoundField DataField="SourceTag" HeaderText="SourceTag" />
+                        <asp:BoundField DataField="SourceServer" HeaderText="SourceServer" />
+                        <asp:BoundField DataField="wwValueSelector" HeaderText="wwValueSelector" />
+                        <asp:BoundField DataField="wwExpression" HeaderText="wwExpression" />
+                        <asp:BoundField DataField="wwUnit" HeaderText="wwUnit" />
                     </Columns>
                     <EmptyDataTemplate>
                         <div class="NoData">查無符合條件資料</div>
